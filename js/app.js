@@ -22,7 +22,7 @@ var pikeLocation = {
       var hourlyTotal = (Math.floor(cusRandoNum * this.avgCookieSale));
 
       var cookiesPerHour = document.createElement('li');
-      cookiesPerHour.textContent = storeHours[i] + ': ' + hourlyTotal;
+      cookiesPerHour.textContent = storeHours[i] + ':00 = ' + hourlyTotal;
 
       pikeStore.appendChild(cookiesPerHour);
 
@@ -60,7 +60,7 @@ var seaTacLocation = {
 
       var cookiesPerHour = document.createElement('li');
 
-      cookiesPerHour.textContent = storeHours[i] + ': ' + hourlyTotal;
+      cookiesPerHour.textContent = storeHours[i] + ':00 = ' + hourlyTotal;
 
       seaTacStore.appendChild(cookiesPerHour);
 
@@ -93,7 +93,7 @@ var seattleCenterLocation = {
 
       var cookiesPerHour = document.createElement('li');
 
-      cookiesPerHour.textContent = storeHours[i] + ':00' + ' = ' + hourlyTotal;
+      cookiesPerHour.textContent = storeHours[i] + ':00 = ' + hourlyTotal;
 
       seattleCenterStore.appendChild(cookiesPerHour);
 
@@ -127,7 +127,7 @@ var capitolHillLocation = {
 
       var cookiesPerHour = document.createElement('li');
 
-      cookiesPerHour.textContent = storeHours[i] + ': ' + hourlyTotal;
+      cookiesPerHour.textContent = storeHours[i] + ':00 = '+ hourlyTotal;
 
       capitolHillStore.appendChild(cookiesPerHour);
 
@@ -163,7 +163,7 @@ var alkiLocation = {
 
       var cookiesPerHour = document.createElement('li');
 
-      cookiesPerHour.textContent = storeHours[i] + ': ' + hourlyTotal;
+      cookiesPerHour.textContent = storeHours[i] + ':00 = ' + hourlyTotal;
 
       alkiStore.appendChild(cookiesPerHour);
 

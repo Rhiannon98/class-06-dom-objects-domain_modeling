@@ -2,10 +2,10 @@
   float: left;
   width: 20%;
 
-  border-box:  
+  /* border: border-box; */
 };
 
-.index {
+.navWords {
   font-family: 'Loved by the King', cursive;
-
 }
+
