@@ -1,16 +1,101 @@
 // //locations
 // //store hours
+'use strict';
+
+
+var storeArray = [];
+
+var storeTable = document.getElementById('storeStuff');
 
 var storeHours = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-console.log(storeHours);
+
+var StoreConstructor = function (minCustomer, maxCustomer, avgCookieSale, storeLocation) {
+
+  this.min = minCustomer;
+  this.max = maxCustomer;
+  this.avgSale = avgCookieSale;
+  this.storeLocal = storeLocation;
+  this.hourlySale = [];
+  storeArray.push(this);
+
+};
 
 
-var pikeLocation = {
+StoreConstructor.prototype.salesPerHour = function () {
+
+  var dayTotal = 0;
+
+  for (var i = 0; i < storeHours.length; i++) {
+
+    var cusRandoNum = (Math.random() * (this.max - this.min) + (this.min));
+
+    var hourlyTotal = (Math.floor(cusRandoNum * this.avgSale));
+
+    dayTotal += hourlyTotal;
+
+    this.hourlySale.push(hourlyTotal);
+  }
+};
+
+StoreConstructor.prototype.render = function () {
+  //create a var trElement 'tr'
+  var trElement = document.createElement('tr');
+  //create a var tdElement 'td'
+  var tdElement = document.createElement('td');
+  //assign this.keyWord to td
+  tdElement.textContent = this.storeLocal;
+  //tdElement append to tr
+  trElement.appendChild(tdElement);
+  //repeat -create tdElement, assign, append
+
+  for (var i = 0; i < storeHours.length; i++) {
+    tdElement = document.createElement('td');
+    tdElement.textContent = this.hourlySale[i];
+    trElement.appendChild(tdElement);
+  }
+
+  tdElement = document.createElement('td');
+  tdElement.textContent = this.dayTotal;
+  trElement.appendChild(tdElement);
+
+  storeTable.appendChild(trElement);
+
+};
+
+
+
+var pike = new StoreConstructor(23, 65, 6.3, '1st and Pike');
+pike.salesPerHour();
+pike.render();
+console.log(pike);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* var pikeLocation = {
+
   minCustomer: 23,
   maxCustomer: 65,
   avgCookieSale: 6.3,
 
   salesPerHour: function () {
+
     var pikeStore = document.getElementById('pikeLocal');
 
     var dayTotal = 0;
@@ -179,3 +264,4 @@ var alkiLocation = {
 };
 console.log(alkiLocation);
 alkiLocation.salesPerHour();
+*/
