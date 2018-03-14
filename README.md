@@ -1,4 +1,8 @@
 # class-06-dom-objects-domain_modeling
 
-Working in a group with Timea, Max, Earl-Jay and Jason (also me but I think that is a given).
+I have  a group effort attempt at writing this code and having the CSS working
+Below is who I have worked with each day (or each branch);
+
+-> Monday = Timea, Max, Earl-Jay, and Jason 
+-> Tuesday = Jason, Anthony, Max, and a bunch of TA's
 
