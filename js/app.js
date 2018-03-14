@@ -8,6 +8,29 @@ var storeArray = [];
 var storeTable = document.getElementById('storeStuff');
 
 var storeHours = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+var header = function () {
+
+  var trElement = document.createElement('tr');
+  var thElement = document.createElement('th');
+
+  trElement.textContent = 'Store';
+  thElement.appendChild(trElement);
+
+  for (var i = 0; i < storeHours.length; i++) {
+    thElement = document.createElement('th');
+
+    thElement.textContent = storeHours[i];
+
+    trElement.appendChild(thElement);
+  }
+
+  thElement = document.createElement('th');
+  thElement.textContent = 'Day Total';
+  trElement.appendChild(thElement);
+
+  storeTable.appendChild(trElement);
+};
+header();
 
 var StoreConstructor = function (minCustomer, maxCustomer, avgCookieSale, storeLocation) {
 
@@ -15,7 +38,8 @@ var StoreConstructor = function (minCustomer, maxCustomer, avgCookieSale, storeL
   this.max = maxCustomer;
   this.avgSale = avgCookieSale;
   this.storeLocal = storeLocation;
-  this.hourlySale = [];
+  this.hourlySales = [];
+  this.dayTotals = 0;
   storeArray.push(this);
 
 };
@@ -33,11 +57,15 @@ StoreConstructor.prototype.salesPerHour = function () {
 
     dayTotal += hourlyTotal;
 
-    this.hourlySale.push(hourlyTotal);
+
+    this.hourlySales.push(hourlyTotal);
+
   }
+  this.dayTotals = dayTotal;
 };
 
 StoreConstructor.prototype.render = function () {
+
   //create a var trElement 'tr'
   var trElement = document.createElement('tr');
   //create a var tdElement 'td'
@@ -50,24 +78,44 @@ StoreConstructor.prototype.render = function () {
 
   for (var i = 0; i < storeHours.length; i++) {
     tdElement = document.createElement('td');
-    tdElement.textContent = this.hourlySale[i];
+    tdElement.textContent = this.hourlySales[i];
     trElement.appendChild(tdElement);
   }
 
   tdElement = document.createElement('td');
-  tdElement.textContent = this.dayTotal;
+  tdElement.textContent = this.dayTotals;
   trElement.appendChild(tdElement);
 
   storeTable.appendChild(trElement);
 
 };
 
+//TODO:
+//MAKE A BLOODY FOOTER!!!
 
 
 var pike = new StoreConstructor(23, 65, 6.3, '1st and Pike');
 pike.salesPerHour();
 pike.render();
-console.log(pike);
+
+var seaTac = new StoreConstructor(3, 24, 1.2, 'SeaTac Airport');
+seaTac.salesPerHour();
+seaTac.render();
+
+var capHill = new StoreConstructor(20, 38, 2.3, 'Capitol Hill');
+capHill.salesPerHour();
+capHill.render();
+
+var alkiStore = new StoreConstructor(2, 16, 4.6, 'Alki');
+alkiStore.salesPerHour();
+alkiStore.render();
+
+var seaCenter = new StoreConstructor(11, 38, 3.7, 'Seattle Center');
+seaCenter.salesPerHour();
+seaCenter.render();
+
+
+
 
 
 

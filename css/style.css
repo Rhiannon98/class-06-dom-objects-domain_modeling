@@ -5,10 +5,39 @@
   /* border: border-box; */
 };
 
-#navWords {
-  font-family: 'Gloria Hallelujah', cursive;
+h1 {
+  font-size: 100px;
 }
 
+h2 {
+  font-size: 40px;
+}
 .navWords {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+#bodyFont {
+  font-family: 'Loved by the King', cursive;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+table {
+  border: 2px solid black;
+}
+
+th {
+  font-style: bold;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  padding-right: 10px;
+  border: 2px dotted black;
+  text-align: center;
 }
