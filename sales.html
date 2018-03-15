@@ -13,9 +13,38 @@
 
 
 
-    <table id = "storeStuff">
+    <table align = "center" id = "storeStuff">
 
     </table>
+
+    <form id = "addNewStore">
+      <fieldset>
+        <legend>Add Another Store's Stats:</legend>
+
+        <p class = "fillTheForm">
+          <label for = "minCustomer">Min Customer:</label>
+          <input type = "number" name = "minCustomer">
+        </p>
+
+        <p class = "fillTheForm">
+          <label for = "maxCustomer">Max Customer:</label>
+          <input type = "number" name = "maxCustomer">
+        </p>
+
+        <p class = "fillTheForm">
+          <label for = "avgCookieSale">Average Sales:</label>
+          <input type = "number" name = "avgcookieSale">
+        </p>
+
+        <p class = "fillTheForm">
+          <label for = "storeLocation">Store Location:</label>
+          <input type = "text" name = "storeLocation">
+        </p>
+
+        <button>Submit Store</button>
+
+      </fieldset>
+    </form>
 
     <script src = "js/app.js"></script>
   </body>

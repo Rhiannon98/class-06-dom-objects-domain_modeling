@@ -1,11 +1,16 @@
-.uniform {
-  float: left;
-  width: 20%;
 
-  /* border: border-box; */
-};
+body {
+  background-image: url("../cookiecutterbackground.jpg");
+  background-size: 100vw;
+}
+
+ h2, .navwords, h3, ul, li, p {
+  color: salmon;
+  text-align: center;
+}
 
 h1 {
+  color: white;
   font-size: 100px;
 }
 
@@ -25,10 +30,13 @@ h3 {
 }
 
 table {
-  border: 2px solid black;
+  border: 2px solid salmon;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-th {
+td {
   font-style: bold;
 }
 
@@ -36,8 +44,13 @@ tr {
   text-align: center;
 }
 
-td {
+td, legend, button{
   padding-right: 10px;
-  border: 2px dotted black;
+  border: 2px dotted salmon;
+  color: white;
   text-align: center;
+}
+
+.fillTheForm {
+  color: white;
 }
