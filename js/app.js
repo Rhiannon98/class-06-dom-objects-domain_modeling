@@ -25,7 +25,7 @@ var header = function () {
     //append tr to thead
     //append thead to table
 
-    thElement.textContent = storeHours[i];
+    thElement.textContent = storeHours[i] + '00';
 
     trElement.appendChild(thElement);
   }
@@ -190,7 +190,7 @@ function addNewStore(event) {
 
   var newMinCus = event.target.minCustomer.value;
   var newMaxCus = event.target.maxCustomer.value;
-  var newAvgCookieSale = event.target.avgCookieSale.value;
+  var newAvgCookieSale = event.target.avgCookieSales.value;
   var newStoreLocal = event.target.storeLocation.value;
 
   new StoreConstructor(newMinCus, newMaxCus, newAvgCookieSale, newStoreLocal);

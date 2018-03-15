@@ -39,8 +39,9 @@ td {
 }
 
 th {
-  border: .085em solid #FFD5E3;
-  font-size: 2em;
+  border: .075em solid #FFD5E3;
+  border-bottom: .075em solid #FFD5E3;
+  font-size: 1.10em;
 }
 
 .fillTheForm {

@@ -1,7 +1,7 @@
 
 
 body {
-  background-image: url("../cookiecutterbackground.jpg");
+  background-image: url("../images/cookiecutterbackground.jpg");
   background-size: 100vw;
 }
 
@@ -12,11 +12,11 @@ body {
 
 h1 {
   color: white;
-  font-size: 100em;
+  font-size: 6.5em;
 }
 
 h2 {
-  font-size: 40em;
+  font-size: 6em;
 }
 .navWords {
   font-family: 'Reenie Beanie', cursive;
@@ -27,32 +27,9 @@ h2 {
 }
 
 h3 {
-  font-size: 40em;
+  font-size: 3em;
   color: #79D9FF;
 }
-
-table {
-  border: 2em solid #FFD5E3;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-td {
-  font-style: bold;
-}
-
-tr {
-  text-align: center;
-}
-
-td, legend, button{
-  padding-right: 10em;
-  border: 2em dotted #FFD5E3;
-  color: white;
-  text-align: center;
-}
-
-.fillTheForm {
-  color: white;
+ul, p {
+  font-size: 2em;
 }
