@@ -1,8 +1,17 @@
 
 
 body {
-  background-image: url("../images/cookiecutterbackground.jpg");
+  background-image: url("../images/download.jpg");
   background-size: 100vw;
+}
+
+img {
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
 }
 
  h2, .navwords, h3, ul, li, p {

@@ -1,10 +1,8 @@
 body {
-  background-color: #2C3975;
-  font-size: 1.5em;
-}
-
-body, button {
+  background-image: url("../images/download.jpg");
+  background-size: 100vw;
   font-family: 'Loved by the King', cursive;
+  font-size: 1.5em;
 }
 
 legend {
