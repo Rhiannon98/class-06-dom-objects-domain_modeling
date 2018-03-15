@@ -1,21 +1,22 @@
 
+
 body {
   background-image: url("../cookiecutterbackground.jpg");
   background-size: 100vw;
 }
 
  h2, .navwords, h3, ul, li, p {
-  color: salmon;
+  color: #FFD5E3;
   text-align: center;
 }
 
 h1 {
   color: white;
-  font-size: 100px;
+  font-size: 100em;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 40em;
 }
 .navWords {
   font-family: 'Reenie Beanie', cursive;
@@ -26,11 +27,12 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 40em;
+  color: #79D9FF;
 }
 
 table {
-  border: 2px solid salmon;
+  border: 2em solid #FFD5E3;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -45,8 +47,8 @@ tr {
 }
 
 td, legend, button{
-  padding-right: 10px;
-  border: 2px dotted salmon;
+  padding-right: 10em;
+  border: 2em dotted #FFD5E3;
   color: white;
   text-align: center;
 }

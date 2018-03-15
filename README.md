@@ -5,4 +5,6 @@ Below is who I have worked with each day (or each branch);
 
 -> Monday = Timea, Max, Earl-Jay, and Jason 
 -> Tuesday = Jason, Anthony, Max, and a bunch of TA's
+->Wednesday = Jason, TA's, Max, Collin, and Anthony. Oh, and 3 whiteboards.
+
 

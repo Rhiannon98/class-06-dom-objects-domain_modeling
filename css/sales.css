@@ -1,0 +1,51 @@
+body {
+  background-color: #2C3975;
+  font-size: 1.5em;
+}
+
+body, button {
+  font-family: 'Loved by the King', cursive;
+}
+
+legend {
+  margin-left: .15em;
+  margin-right: auto;
+  color: white;
+  padding: .15em;
+}
+
+table {
+  padding: .15;
+  border: .15em solid #FFD5E3;
+  color: white;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+table tr:hover {
+  color: lightskyblue;
+}
+a {
+  margin-bottom: auto;
+  background-color: gray;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  border: .15em dotted #FFD5E3; 
+}
+
+th {
+  border: .085em solid #FFD5E3;
+  font-size: 2em;
+}
+
+.fillTheForm {
+  padding-top: .25em;
+  color: white;
+  margin-left: .2em;
+  margin-right: auto;
+}
