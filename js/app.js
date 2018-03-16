@@ -33,8 +33,9 @@ var header = function () {
   thElement = document.createElement('th');
   thElement.textContent = 'Day Total';
   trElement.appendChild(thElement);
+  tHead.appendChild(trElement);
 
-  storeTable.appendChild(trElement);
+  storeTable.appendChild(tHead);
 };
 
 storeForm.addEventListener('submit', addNewStore);
