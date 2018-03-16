@@ -8,9 +8,13 @@ Below is who I have worked with each day (or each branch);
 ->Wednesday = Jason, TA's, Max, Collin, and Anthony. Oh, and 3 whiteboards.
 
 
-images provided by:
+images/css provided by:
+
 unsplash.com
+
 https://www.flickr.com/photos/webtreatsetc/5051067728
+
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcIuRhYdobmDIkUzvFDv7NtJSA60RgT6bvMdb4v56BsVZtr7r
 
+https://css-tricks.com/simple-css-row-column-highlighting/
 

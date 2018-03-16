@@ -61,34 +61,26 @@ var StoreConstructor = function (minCustomer, maxCustomer, avgCookieSale, storeL
 
 };
 
-
-
 // var pike =
 new StoreConstructor(23, 65, 6.3, '1st and Pike');
 // pike.salesPerHour();
 // pike.render();
-
 // var seaTac =
 new StoreConstructor(3, 24, 1.2, 'SeaTac Airport');
 // seaTac.salesPerHour();
 // seaTac.render();
-
 // var capHill =
 new StoreConstructor(20, 38, 2.3, 'Capitol Hill');
 // capHill.salesPerHour();
 // capHill.render();
-
 // var alkiStore =
 new StoreConstructor(2, 16, 4.6, 'Alki');
 // alkiStore.salesPerHour();
 // alkiStore.render();
-
 // var seaCenter =
 new StoreConstructor(11, 38, 3.7, 'Seattle Center');
 // seaCenter.salesPerHour();
 // seaCenter.render();
-
-
 
 StoreConstructor.prototype.salesPerHour = function () {
 
@@ -102,10 +94,9 @@ StoreConstructor.prototype.salesPerHour = function () {
 
     dayTotal += hourlyTotal;
 
-
     this.hourlySales.push(hourlyTotal);
-
   }
+
   this.daysTotal = dayTotal;
 };
 
@@ -159,7 +150,6 @@ function footer() {
 
   var totalTotal = 0;
 
-
   for (var i in storeHours) {
 
     var newHourlyTotal = 0;
@@ -183,9 +173,6 @@ function footer() {
   storeTable.appendChild(trElement);
 }
 
-
-
-
 function addNewStore(event) {
 
   event.preventDefault();
@@ -203,9 +190,7 @@ function addNewStore(event) {
   allSalesPerHour();
   renderAllStores();
   footer();
-
 }
-
 
 header();
 allSalesPerHour();
