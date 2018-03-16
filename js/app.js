@@ -13,28 +13,29 @@ var header = function () {
   //var tHead = document.createElement('thead');
   var tHead = document.createElement('thead');
   var trElement = document.createElement('tr');
-  var tdElement = document.createElement('td');
+  var thElement = document.createElement('th');
 
-  tdElement.textContent = 'Store';
-  trElement.appendChild(tdElement);
+  thElement.textContent = 'Store';
+  trElement.appendChild(thElement);
 
 
-  for (var i = 0; i < storeHours.length; i++) {
-    tdElement = document.createElement('th');
+  for (var i in storeHours) {
+    thElement = document.createElement('th');
 
     //append tr to thead
     //append thead to table
 
-    tdElement.textContent = storeHours[i];
+    thElement.textContent = storeHours[i] + '00';
 
-    trElement.appendChild(tdElement);
+    trElement.appendChild(thElement);
   }
 
-  tdElement = document.createElement('th');
-  tdElement.textContent = 'Day Total';
-  trElement.appendChild(tdElement);
+  thElement = document.createElement('th');
+  thElement.textContent = 'Day Total';
+  trElement.appendChild(thElement);
+  tHead.appendChild(trElement);
 
-  storeTable.appendChild(trElement);
+  storeTable.appendChild(tHead);
 };
 
 storeForm.addEventListener('submit', addNewStore);
@@ -62,23 +63,28 @@ var StoreConstructor = function (minCustomer, maxCustomer, avgCookieSale, storeL
 
 
 
-var pike = new StoreConstructor(23, 65, 6.3, '1st and Pike');
+// var pike =
+new StoreConstructor(23, 65, 6.3, '1st and Pike');
 // pike.salesPerHour();
 // pike.render();
 
-var seaTac = new StoreConstructor(3, 24, 1.2, 'SeaTac Airport');
+// var seaTac =
+new StoreConstructor(3, 24, 1.2, 'SeaTac Airport');
 // seaTac.salesPerHour();
 // seaTac.render();
 
-var capHill = new StoreConstructor(20, 38, 2.3, 'Capitol Hill');
+// var capHill =
+new StoreConstructor(20, 38, 2.3, 'Capitol Hill');
 // capHill.salesPerHour();
 // capHill.render();
 
-var alkiStore = new StoreConstructor(2, 16, 4.6, 'Alki');
+// var alkiStore =
+new StoreConstructor(2, 16, 4.6, 'Alki');
 // alkiStore.salesPerHour();
 // alkiStore.render();
 
-var seaCenter = new StoreConstructor(11, 38, 3.7, 'Seattle Center');
+// var seaCenter =
+new StoreConstructor(11, 38, 3.7, 'Seattle Center');
 // seaCenter.salesPerHour();
 // seaCenter.render();
 
@@ -115,7 +121,7 @@ StoreConstructor.prototype.render = function () {
   trElement.appendChild(tdElement);
   //repeat -create tdElement, assign, append
 
-  for (var i = 0; i < storeHours.length; i++) {
+  for (var i in storeHours) {
 
     tdElement = document.createElement('td');
     tdElement.textContent = this.hourlySales[i];
@@ -181,6 +187,7 @@ function footer() {
 
 
 function addNewStore(event) {
+
   event.preventDefault();
 
   var newMinCus = event.target.minCustomer.value;
@@ -198,13 +205,10 @@ function addNewStore(event) {
   footer();
 
 }
+
+
 header();
-
 allSalesPerHour();
-
 renderAllStores();
-
 footer();
-//TODO:
-//MAKE A BLOODY FOOTER!!!
 

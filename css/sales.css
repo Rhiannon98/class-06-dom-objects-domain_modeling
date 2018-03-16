@@ -1,0 +1,50 @@
+body {
+  background-image: url("../images/download.jpg");
+  background-size: 100vw;
+  font-family: 'Loved by the King', cursive;
+  font-size: 1.5em;
+}
+
+legend {
+  margin-left: .15em;
+  margin-right: auto;
+  color: white;
+  padding: .15em;
+}
+
+table {
+  padding: .15;
+  border: .15em solid #FFD5E3;
+  color: white;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+table tr:hover {
+  color: lightskyblue;
+}
+a {
+  margin-bottom: auto;
+  background-color: gray;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  border: .15em dotted #FFD5E3; 
+}
+
+th {
+  border: .075em solid #FFD5E3;
+  border-bottom: .075em solid #FFD5E3;
+  font-size: 1.10em;
+}
+
+.fillTheForm {
+  padding-top: .25em;
+  color: white;
+  margin-left: .2em;
+  margin-right: auto;
+}

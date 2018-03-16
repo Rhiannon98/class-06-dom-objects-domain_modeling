@@ -1,21 +1,37 @@
 
+
 body {
-  background-image: url("../cookiecutterbackground.jpg");
+  background-image: url("../images/download.jpg");
   background-size: 100vw;
 }
 
+strong {
+  font-style: oblique;
+}
+
+italic {
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
  h2, .navwords, h3, ul, li, p {
-  color: salmon;
+  color: #FFD5E3;
   text-align: center;
 }
 
 h1 {
   color: white;
-  font-size: 100px;
+  font-size: 6.5em;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 6em;
 }
 .navWords {
   font-family: 'Reenie Beanie', cursive;
@@ -25,32 +41,92 @@ h2 {
   font-family: 'Loved by the King', cursive;
 }
 
-h3 {
-  font-size: 40px;
+h3{
+  font-size: 3em;
+  font-family: wing dings;
+  color: #79D9FF;
 }
 
-table {
-  border: 2px solid salmon;
+ul, p {
+  font-size: 2em;
+}
+#img1:hover{
+  background-image: url("../images/fish.jpg");
+  color: red;
+  /* opacity: 0; */
+}
+
+span {
+
+  color: #BBD8FF;
+
+}
+/* 
+#img1:hover:after {
+ content: url ();
+ display: block;
+ position: absolute;
+ right: 100px;
+} */
+
+span#img2 + img {
+  position: absolute;
+  left: 1000000000px;
+}
+
+span#img2:hover + img {
+  left:200px;
+}
+
+span#img3 + img {
+  position: absolute;
+  left: 1000000000px;
+}
+
+span#img3:hover + img {
+  left:200px;
+}
+
+span#img4 + img {
+  position: absolute;
+  left: 1000000000px;
+}
+
+span#img4:hover + img {
+  left:200px;
+}
+
+span#img5 + img {
+  position: absolute;
+  left: 1000000000px;
+}
+
+span#img5:hover + img {
+  left:200px;
+}
+
+span#img7 + img {
+  position: absolute;
+  left: 1000000000px;
+}
+
+span#img7:hover + img {
+  left:200px;
+}
+
+#img6{
+  color:white;
+  font-size: 1.35em;
+}
+/*  TODO WORK ON LATER, maybe
+span#img6 + img {
+  position: absolute;
+  bottom: 1000000000px;
+}span#img6:hover + img {
+  bottom:200px;
+} */
+
+#img6 {
   color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-td {
-  font-style: bold;
-}
-
-tr {
-  text-align: center;
-}
-
-td, legend, button{
-  padding-right: 10px;
-  border: 2px dotted salmon;
-  color: white;
-  text-align: center;
-}
-
-.fillTheForm {
-  color: white;
+  font-size: 1.25;
 }
