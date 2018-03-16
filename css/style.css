@@ -5,10 +5,61 @@ body {
   background-size: 100vw;
 }
 
+strong {
+  font-style: oblique;
+}
+
+italic {
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ h2, .navwords, h3, ul, li, p {
+  color: #FFD5E3;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 6.5em;
+}
+
+h2 {
+  font-size: 6em;
+}
+.navWords {
+  font-family: 'Reenie Beanie', cursive;
+}
+
+#bodyFont {
+  font-family: 'Loved by the King', cursive;
+}
+
+h3{
+  font-size: 3em;
+  font-family: wing dings;
+  color: #79D9FF;
+}
+
+ul, p {
+  font-size: 2em;
+}
 #img1:hover{
   background-image: url("../images/fish.jpg");
   color: red;
   /* opacity: 0; */
+}
+
+span {
+
+  color: #BBD8FF;
+
 }
 /* 
 #img1:hover:after {
@@ -53,40 +104,29 @@ span#img5 + img {
 span#img5:hover + img {
   left:200px;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+
+span#img7 + img {
+  position: absolute;
+  left: 1000000000px;
 }
 
- h2, .navwords, h3, ul, li, p {
-  color: #FFD5E3;
-  text-align: center;
+span#img7:hover + img {
+  left:200px;
 }
 
-h1 {
+#img6{
+  color:white;
+  font-size: 1.35em;
+}
+/*  TODO WORK ON LATER, maybe
+span#img6 + img {
+  position: absolute;
+  bottom: 1000000000px;
+}span#img6:hover + img {
+  bottom:200px;
+} */
+
+#img6 {
   color: white;
-  font-size: 6.5em;
-}
-
-h2 {
-  font-size: 6em;
-}
-.navWords {
-  font-family: 'Reenie Beanie', cursive;
-}
-
-#bodyFont {
-  font-family: 'Loved by the King', cursive;
-}
-
-h3 {
-  font-size: 3em;
-  font-family: wing dings;
-  color: #79D9FF;
-}
-
-ul, p {
-  font-size: 2em;
+  font-size: 1.25;
 }
